@@ -1,0 +1,163 @@
+/* Reset Dasar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1,h2 {
+    margin: 15px 0 10px;
+}
+
+/* Styling Header / Hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: purple;
+    color: white;
+}
+
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+
+/* Demo Display */
+.block {
+    display: block;
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: white;
+    font-weight: 500;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.inline {
+    display: inline;
+    background-color: #f97316;
+    color: white;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-right: 4px;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 110px;
+    padding: 16px;
+    margin-right: 6px;
+    background: linear-gradient(135deg, #10b981, #34d399);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+    gap: 12px;
+}
+
+.flex div {
+    flex: 1;
+    padding: 18px;
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.grid div {
+    padding: 18px;
+    background: linear-gradient(135deg, #ef4444, #f87171);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hilang {
+    display: none;
+}
+
+/* --- TUGAS MAHASISWA --- */
+/* 1. Berikan styling untuk class .about agar memiliki padding dan background putih */
+.about {
+    padding: 30px 25px;
+    border-radius: 12px;
+    border-left: 6px solid var(--primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about h2 {
+    margin-top: 0;
+}
+
+/* 2. Gunakan Flexbox/Grid pada .portfolio-container agar .card sejajar ke samping */
+.portfolio-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+/* 3. Desain class .card agar terlihat seperti kotak dengan shadow */
+.card {
+    flex: 1;
+    min-width: 220px;
+    padding: 25px 20px;
+    background-color: white;
+    border-radius: 12px;
+    border-top: 5px solid var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
